@@ -8,9 +8,10 @@ import Image from '../components/Image'
 import { Link, graphql } from "gatsby"
 import { RiArrowRightLine, RiArrowRightSLine, RiArrowLeftLine, RiStarLine} from "react-icons/ri"
 import { FaLock } from 'react-icons/fa';
-import Layout from "../components/layout"
+
 import PostCard from "../components/post-card"
-import Seo from "../components/seo"
+import { Seo } from "../components/seo"
+import { Layout } from "../components/layout"
 
 
 import { Slide } from 'react-slideshow-image'
@@ -255,48 +256,7 @@ class BlogIndex extends React.Component {
 
 
 
-<article
-    className="post-card1 each-slide"
-    sx={{
-      // bg: "cardBg",
-      position: 'relative',
-    }}
-  >
 
-<Link
-      className=""
-      to="/milkyway/"
-      sx={{
-        variant: "variants.button",
-      }}
-      title="Milky Way"
-    >
-    
-    <div >
-    <Image className="slider" alt="Abandoned Car in Paris TX" filename="night307.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-    </div>
-    
-
-  <div style={{position:'absolute', top:'30%', right:'10vw', fontSize:'8vw'}}>Milky Way</div>
-
-
-  <div style={{position:'absolute', top:'50%', right:'10vw', fontSize:'8vw'}}>
-    <Link
-            to="/milkyway/"
-            className="button box-shadow"
-            sx={{
-              variant: "variants.button",
-            }}
-          >
-       View the Gallery
-            <span className="icon -right">
-              <RiArrowRightSLine />
-            </span>
-          </Link>
-</div>
-
-</Link>
-</article>
 
 
 
@@ -353,101 +313,6 @@ class BlogIndex extends React.Component {
 
 
 
-<article
-    className="post-card1 each-slide"
-    sx={{
-      // bg: "cardBg",
-      position: 'relative',
-    }}
-  >
-
-<Link
-      className=""
-      to="/crazygeo/"
-      sx={{
-        variant: "variants.button",
-      }}
-      title="Crazy Geology"
-    >
-    
-    <div >
-    <Image className="slider" alt="Todd Photographs some of the weirdest places" filename="night310.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-    </div>
-    
-
-  <div style={{position:'absolute', top:'30%', right:'10vw', fontSize:'8vw'}}>Crazy Geology</div>
-
-
-  <div style={{position:'absolute', top:'50%', right:'10vw', fontSize:'8vw'}}>
-    <Link
-            to="/crazygeo/"
-            className="button box-shadow"
-            sx={{
-              variant: "variants.button",
-            }}
-          >
-       View the Gallery
-            <span className="icon -right">
-              <RiArrowRightSLine />
-            </span>
-          </Link>
-</div>
-
-
-</Link>
-</article>
-
-
-
-
-
-
-
-
-
-<article
-    className="post-card1 each-slide"
-    sx={{
-      // bg: "cardBg",
-      position: 'relative',
-    }}
-  >
-
-<Link
-      className=""
-      to="/daytime/"
-      sx={{
-        variant: "variants.button",
-      }}
-      title="During Daytime"
-    >
-    
-    <div >
-    <Image className="slider" alt="Todd Photographs some of the weirdest places" filename="IMG_0734.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-    </div>
-    
-
-  <div style={{position:'absolute', top:'30%', right:'10vw', fontSize:'8vw'}}>During Daytime</div>
-
-
-  <div style={{position:'absolute', top:'50%', right:'10vw', fontSize:'8vw'}}>
-    <Link
-            to="/daytime/"
-            className="button box-shadow"
-            sx={{
-              variant: "variants.button",
-            }}
-          >
-       View the Gallery
-            <span className="icon -right">
-              <RiArrowRightSLine />
-            </span>
-          </Link>
-</div>
-
-
-</Link>
-</article>
 
 
 
@@ -461,22 +326,7 @@ class BlogIndex extends React.Component {
       <li className="galmenu-item"><Link to="/gallery1/" className="button" sx={{variant: "variants.button",}} title="Gallery 1" id="gallery1">I</Link></li>
       <li className="galmenu-item"><Link to="/gallery2/" className="button" sx={{variant: "variants.button",}}  title="Gallery 2">II</Link></li>
       <li className="galmenu-item"><Link to="/gallery3/" className="button" sx={{variant: "variants.button",}}  title="Gallery 3">III</Link></li>
-      <li className="galmenu-item"><Link to="/gallery4/" className="button" sx={{variant: "variants.button",}}  title="Gallery 4">IV</Link></li>
-      <li className="galmenu-item"><Link to="/gallery5/" className="button" sx={{variant: "variants.button",}}  title="Gallery 5">V</Link></li>
-      <li className="galmenu-item"><Link to="/gallery6/" className="button" sx={{variant: "variants.button",}}  title="Gallery 6">VI</Link></li>
-      <li className="galmenu-item"><Link to="/gallery7/" className="button" sx={{variant: "variants.button",}}  title="Gallery 7">VII</Link></li>
-      <li className="galmenu-item"><Link to="/gallery8/" className="button" sx={{variant: "variants.button",}}  title="Gallery 8">VIII</Link></li>
-      <li className="galmenu-item"><Link to="/gallery9/" className="button" sx={{variant: "variants.button",}}  title="Gallery 9">IV</Link></li>
-      {/* <li className="galmenu-item1"><Link to="/gallery10/"  title="Gallery 10">X</Link></li> */}
-      
-      {/* <li className="galmenu-item no-app"><Link to="/install"  title="Gallery 8">VIII<FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li>
-      <li className="galmenu-item no-app"><Link to="/install"  title="Gallery 9">IV<FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li>
-      <li className="galmenu-item no-app"><Link to="/install"  title="Gallery 10">X<FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li> */}
-      
-      
-      {/* <li className="galmenu-item has-app" has-app><Link to="/vault/gallery8"  title="Gallery 8" has-app>VIII</Link></li>
-      <li className="galmenu-item has-app" has-app><Link to="/vault/gallery9"  title="Gallery 9">IX</Link></li>
-      <li className="galmenu-item has-app" has-app><Link to="/vault/gallery10"  title="Gallery 10">X</Link></li> */}
+    
       </ul>
 
 
@@ -532,27 +382,7 @@ class BlogIndex extends React.Component {
     </article>
 
 
-    <article
-    className="post-card"
-    sx={{
-      bg: "cardBg",
-      position:'relative'
-    }}
-  >
-    <Link
-      className=""
-      to="/milkyway/"
-      sx={{
-        variant: "variants.button",
-      }}
-      title="Milky Way"
-    >
-     <div >
-      <Image className="slider" alt="Todd Photographs the Milky Way" filename="night307.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-        </div><div className="post-content"><h2 className="title">Milky Way</h2><p className="meta">Shots where the sky steals the show</p></div>
-        <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
-        </Link>
-    </article>
+   
 
 
     <article
@@ -579,53 +409,7 @@ class BlogIndex extends React.Component {
 
 
 
-    <article
-    className="post-card"
-    sx={{
-      bg: "cardBg",
-      position:'relative'
-    }}
-  >
-    <Link
-      className=""
-      to="/crazygeo/"
-      sx={{
-        variant: "variants.button",
-      }}
-      title="Crazy Geology"
-    >
-     <div >
-      <Image className="slider" alt="Todd Photographs some of the weirdest places" filename="night310.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-        </div><div className="post-content"><h2 className="title">Crazy Geology</h2><p className="meta">The world is awesome - just watch your step!</p></div>
-        <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
-        </Link>
-    </article>
-
-
-
-
-
-    <article
-    className="post-card"
-    sx={{
-      bg: "cardBg",
-      position:'relative'
-    }}
-  >
-    <Link
-      className=""
-      to="/daytime/"
-      sx={{
-        variant: "variants.button",
-      }}
-      title="During Daytime"
-    >
-     <div >
-      <Image className="slider" alt="Todd Photographs some of the weirdest places" filename="IMG_0734.jpg" style={{backgroundSize:'', height:'200px', zIndex:'', }} />
-        </div><div className="post-content"><h2 className="title">During Daytime</h2><p className="meta">I'm not actually a vampire!</p></div>
-        <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
-        </Link>
-    </article>
+    
     </div>
 
 
@@ -648,7 +432,7 @@ class BlogIndex extends React.Component {
         <Pagination {...props} />
 
 
-        <div
+        {/* <div
       className="wrapper"
       style={{
         textAlign: "center",
@@ -693,7 +477,7 @@ class BlogIndex extends React.Component {
   <h5 style={{textAlign:'center',}}>Visit UrbanFetish.com</h5></a>
   
   </div>
-</div>
+</div> */}
 
 
 

@@ -61,22 +61,6 @@ const GalleryMenu = () => (
     </Link>
       </li>
      
-
-      <li className="galmenu-item">
-      <Link
-      className="button"
-      to="/milkyway/"
-      sx={{
-        variant: "variants.button",
-      }}
-      title="Milky Way Gallery"
-    >
-      Milky Way
-      <span className="icon -right">
-        <RiArrowRightSLine />
-      </span>
-    </Link>
-      </li>
       
       <li className="galmenu-item">
       <Link
@@ -113,39 +97,7 @@ const GalleryMenu = () => (
 
 
 
-      <li className="galmenu-item">
-      <Link
-      className="button"
-      to="/crazygeo/"
-      sx={{
-        variant: "variants.button",
-      }}
-      title="Crazy Geology Gallery"
-    >
-      Crazy Geology
-      <span className="icon -right">
-        <RiArrowRightSLine />
-      </span>
-    </Link>
-      </li>
-
-
-      <li className="galmenu-item">
-      <Link
-      className="button"
-      to="/daytime/"
-      sx={{
-        variant: "variants.button",
-      }}
-      title="During Daytime Gallery"
-    >
-      During Daytime
-      <span className="icon -right">
-        <RiArrowRightSLine />
-      </span>
-    </Link>
-      </li>
-
+      
 
 	  
       
@@ -153,10 +105,6 @@ const GalleryMenu = () => (
       
       
       
-      
-      
-      {/* <li className="galmenu-item has-app"><Link to="/vault/daylight"  title="During Daylight">During<br />Daylight</Link></li>
-      <li className="galmenu-item no-app"><Link to="/vault"  title="During Daylight">During<br />Daylight <FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li> */}
       
 
 
@@ -175,22 +123,7 @@ const GalleryMenu = () => (
       <li className="galmenu-item"><Link to="/gallery1/" className="button" sx={{variant: "variants.button",}} title="Gallery 1" id="gallery1">I</Link></li>
       <li className="galmenu-item"><Link to="/gallery2/" className="button" sx={{variant: "variants.button",}}  title="Gallery 2">II</Link></li>
       <li className="galmenu-item"><Link to="/gallery3/" className="button" sx={{variant: "variants.button",}}  title="Gallery 3">III</Link></li>
-      <li className="galmenu-item"><Link to="/gallery4/" className="button" sx={{variant: "variants.button",}}  title="Gallery 4">IV</Link></li>
-      <li className="galmenu-item"><Link to="/gallery5/" className="button" sx={{variant: "variants.button",}}  title="Gallery 5">V</Link></li>
-      <li className="galmenu-item"><Link to="/gallery6/" className="button" sx={{variant: "variants.button",}}  title="Gallery 6">VI</Link></li>
-      <li className="galmenu-item"><Link to="/gallery7/" className="button" sx={{variant: "variants.button",}}  title="Gallery 7">VII</Link></li>
-      <li className="galmenu-item"><Link to="/gallery8/" className="button" sx={{variant: "variants.button",}}  title="Gallery 8">VIII</Link></li>
-      <li className="galmenu-item"><Link to="/gallery9/" className="button" sx={{variant: "variants.button",}}  title="Gallery 9">IV</Link></li>
-      {/* <li className="galmenu-item1"><Link to="/gallery10/"  title="Gallery 10">X</Link></li> */}
-      
-      {/* <li className="galmenu-item no-app"><Link to="/install"  title="Gallery 8">VIII<FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li>
-      <li className="galmenu-item no-app"><Link to="/install"  title="Gallery 9">IV<FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li>
-      <li className="galmenu-item no-app"><Link to="/install"  title="Gallery 10">X<FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li> */}
-      
-      
-      {/* <li className="galmenu-item has-app" has-app><Link to="/vault/gallery8"  title="Gallery 8" has-app>VIII</Link></li>
-      <li className="galmenu-item has-app" has-app><Link to="/vault/gallery9"  title="Gallery 9">IX</Link></li>
-      <li className="galmenu-item has-app" has-app><Link to="/vault/gallery10"  title="Gallery 10">X</Link></li> */}
+
       </ul>
 
 </div>

@@ -4,8 +4,8 @@ import { Link, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import { Seo } from "../components/seo"
+import { Layout } from "../components/layout"
 
 const styles = {
   "article blockquote": {

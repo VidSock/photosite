@@ -1,3 +1,4 @@
+require("dotenv").config()
 /**
  * Configure your Gatsby site with this file.
  *
@@ -15,6 +16,28 @@ const settings = require("./src/util/site.json")
 module.exports = {
   siteMetadata: settings.meta,
   plugins: [
+    {
+      resolve: "gatsby-source-shopify",
+      options: {
+        apiKey: process.env.SHOPIFY_API_KEY,
+        password: process.env.SHOPIFY_SHOP_PASSWORD,
+        storeUrl: process.env.GATSBY_SHOPIFY_STORE_URL,
+        shopifyConnections: ["collections"],
+        shopName: ["sales.twilightscapes.com"],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-modal-routing-3`,
+      options: {
+        // A selector to set react-modal's app root to, default is `#___gatsby`
+        // See http://reactcommunity.org/react-modal/accessibility/#app-element
+        appElement: '#___gatsby',
+
+        // Object of props that will be passed to the react-modal container
+        // See http://reactcommunity.org/react-modal/#usage
+        modalProps: { },
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

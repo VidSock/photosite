@@ -1,8 +1,8 @@
 import React from "react"
 
 
-import Seo from "../components/seo"
-import Layout from "../components/layout"
+import { Seo } from "../components/seo"
+import { Layout } from "../components/layout"
 
 // import Image from '../components/Image'
 // import ScrollAnimation from 'react-animate-on-scroll'
