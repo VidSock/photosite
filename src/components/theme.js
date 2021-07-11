@@ -6,7 +6,7 @@ import { FiMoon, FiSun } from "react-icons/fi"
 const Theme = () => {
   const [colorMode, setColorMode] = useColorMode()
   return (
-    <div sx={themeStyles.modeOption}>
+    <div className="carto" sx={themeStyles.modeOption}>
       <button
         onClick={e => {
           setColorMode(colorMode === "default" ? "dark" : "default")
@@ -15,9 +15,9 @@ const Theme = () => {
       >
         <div sx={themeStyles.modeIcons}>
           <div>{colorMode === "default" ? <FiMoon /> : <FiSun />}</div>
-          <div sx={themeStyles.modeText}>
+          {/* <div sx={themeStyles.modeText}>
             {colorMode === "default" ? "Dark (best)" : "Light"}
-          </div>
+          </div> */}
         </div>
       </button>
     </div>
@@ -28,11 +28,11 @@ export default Theme
 const themeStyles = {
   modeOption: {
     button: {
-      fontSize: "25px",
+      fontSize: "28px",
       bg: "transparent",
       border: "none",
       cursor: "pointer",
-      mt: "-5px",
+      mt: "-2px",
       p: "0 20px 0 0",
       "&:hover": {
         color: "#bea9b3",
@@ -42,7 +42,7 @@ const themeStyles = {
   modeIcons: {
     display: "flex",
     alignItems: "center",
-    color: "#fff",
+    color: "#ccc",
     mt: "10px",
   },
   modeText: {
